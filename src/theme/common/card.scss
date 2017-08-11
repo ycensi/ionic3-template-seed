@@ -1,0 +1,16 @@
+@mixin card-styles($background, $color){
+  
+  &.card-ios {
+    background-color: $background !important;
+    color: $color !important;
+    box-shadow: none !important;
+    margin: 12px 0;
+    width: 100%;
+    border-radius: 0;    
+  }
+  
+}
+
+ion-card { 
+  @include card-styles(color($colors, element, base), color($colors, element, contrast));
+}

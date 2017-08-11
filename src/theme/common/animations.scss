@@ -1,0 +1,36 @@
+// Include animations
+@import 'attention-seekers/_bounce';
+@import 'fading-entrances/_fadeIn';
+
+@import 'sliding-entrances/_slideInLeft';
+@import 'sliding-entrances/_slideInRight';
+@import 'sliding-entrances/_slideInUp';
+@import 'sliding-entrances/_slideInDown';
+
+.bounce {
+    @include bounce();
+}
+
+.bounce-infinite {
+    @include bounce(infinite);
+}
+
+.fade-in {
+    @include fadeIn();
+}
+
+.slide-in-right {
+    @include slideInRight();
+}
+
+.slide-in-left {
+    @include slideInLeft();
+}
+
+.slide-in-up {
+    @include slideInUp();
+}
+
+.slide-in-down {
+    @include slideInDown();
+}

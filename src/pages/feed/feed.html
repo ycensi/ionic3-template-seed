@@ -1,0 +1,34 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Feed</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <ion-card class="fade-in" *ngFor="let item of feedItems">
+    <img src="https://unsplash.it/720/480" />
+    <ion-card-content>
+      <ion-card-title>
+        Nine Inch Nails Live
+      </ion-card-title>
+      <p>
+        The most popular industrial group ever, and largely responsible for bringing the music to a mass audience.
+      </p>
+    </ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-4>
+          <button ion-button color="dark">Button 1</button>
+        </ion-col>
+        <ion-col col-4>
+          <button ion-button color="dark">Button 1</button>
+        </ion-col>
+        <ion-col col-4>
+          <button ion-button color="dark">Button 1</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+</ion-content>
