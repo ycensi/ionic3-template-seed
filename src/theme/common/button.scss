@@ -1,0 +1,9 @@
+@mixin button-styles(){
+  &.button-ios { 
+    border-radius: 0px !important;
+  }
+}
+
+[ion-button] {
+	@include button-styles();
+}
